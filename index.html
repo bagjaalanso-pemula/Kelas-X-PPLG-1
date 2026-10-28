@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X PPLG 1 - Website Kelas</title>
+  <meta name="description" content="Website resmi kelas X PPLG 1 - Pengembangan Perangkat Lunak dan Gim">
+  <link rel="stylesheet" href="Kelas.css">
+</head>
+<body>
+
+  <header class="navbar" id="navbar">
+    <a href="#home" class="logo">&lt;X PPLG 1 /&gt;</a>
+    <nav>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Beranda</a></li>
+        <li><a href="#tentang">Tentang</a></li>
+        <li><a href="#anggota">Anggota</a></li>
+        <li><a href="#jadwal">Jadwal</a></li>
+        <li><a href="#galeri">Galeri</a></li>
+        <li><a href="#pesan">Pesan</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Ganti tema">🌙</button>
+      <button id="menuToggle" class="icon-btn menu-btn" aria-label="Menu">☰</button>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+
+    <div class="hero-deco" aria-hidden="true">
+      <span class="blob b1"></span>
+      <span class="blob b2"></span>
+      <span class="sym s1">&lt;/&gt;</span>
+      <span class="sym s2">{ }</span>
+      <span class="sym s3">;</span>
+      <span class="sym s4">=&gt;</span>
+      <span class="sym s5">#</span>
+      <span class="sym s6">( )</span>
+      <span class="ring r1"></span>
+      <span class="ring r2"></span>
+      <span class="plus p1">+</span>
+      <span class="plus p2">+</span>
+      <span class="plus p3">+</span>
+    </div>
+
+    <div class="hero-content">
+      <img src="WhatsApp_Image_2026-10-24_at_13.28.27-removebg-preview.png" alt="Logo X PPLG 1 Angkatan 2026/2027" class="hero-logo" onerror="logoFallback(this)">
+      <p class="badge">Pengembangan Perangkat Lunak &amp; Gim</p>
+      <h1>Kelas <span class="gradient-text">X PPLG 1</span></h1>
+      <p class="typing">Kami adalah <span id="typingText"></span><span class="cursor">|</span></p>
+      <div class="hero-buttons">
+        <a href="#galeri" class="btn btn-primary">Lihat Galeri</a>
+        <a href="#anggota" class="btn btn-outline">Kenalan Yuk</a>
+      </div>
+    </div>
+    <div class="hero-photo">
+      <img src="WhatsApp Image 2026-10-24 at 11.32.39.jpeg" alt="Foto bersama kelas X PPLG 1" onerror="fallbackImg(this,'Foto Kelas')">
+      <span class="chip c1">💻 Coding</span>
+      <span class="chip c2">🎮 Game Dev</span>
+      <span class="chip c3">🚀 Kreatif</span>
+    </div>
+
+    <svg class="hero-wave" viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true">
+      <path d="M0,40 C240,100 480,0 720,40 C960,80 1200,10 1440,50 L1440,90 L0,90 Z"/>
+    </svg>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><h2 class="counter" data-target="17">0</h2><p>Siswa</p></div>
+    <div class="stat"><h2 class="counter" data-target="12">0</h2><p>Mata Pelajaran</p></div>
+    <div class="stat"><h2 class="counter" data-target="12">0</h2><p>Guru Pengajar</p></div>
+    <div class="stat"><h2 class="counter" data-target="4">0</h2><p>Bahasa Pemrograman</p></div>
+  </section>
+
+  <section id="tentang" class="section reveal">
+    <h2 class="section-title">Tentang Kelas</h2>
+
+    <div class="about-art" aria-hidden="true">
+      <div class="art-group">
+        <img class="tech-logo" src="WhatsApp_Image_2026-10-24_at_14.10.08-removebg-preview.png" alt="Logo HTML, CSS, dan JavaScript" onerror="techFallback(this)">
+        <svg class="art-phone" viewBox="0 0 120 190">
+          <rect x="22" y="6" width="76" height="150" rx="14" fill="var(--card)" stroke="#14298f" stroke-width="3"/>
+          <rect x="32" y="30" width="56" height="20" rx="6" fill="#1e46f0"/>
+          <rect x="32" y="58" width="30" height="6" rx="3" fill="#38b6ff" opacity=".6"/>
+          <rect x="32" y="70" width="44" height="6" rx="3" fill="#1e46f0" opacity=".5"/>
+          <rect x="32" y="108" width="56" height="16" rx="5" fill="#38b6ff"/>
+          <rect x="2" y="62" width="44" height="30" rx="6" fill="var(--card)" stroke="var(--border)" stroke-width="2"/>
+          <text x="24" y="82" fill="#1e46f0" font-size="12" text-anchor="middle" font-family="monospace" font-weight="700">&lt;/&gt;</text>
+          <circle cx="108" cy="30" r="4" fill="#38b6ff"/>
+          <text x="104" y="136" fill="#1e46f0" font-size="16" font-family="sans-serif">+</text>
+          <ellipse cx="60" cy="170" rx="46" ry="5" fill="var(--border)"/>
+        </svg>
+      </div>
+      <div class="art-group">
+        <div class="code-tile"><small>CODING</small><div class="tile">&lt;/&gt;</div></div>
+        <svg class="art-laptop" viewBox="0 0 200 140">
+          <rect x="30" y="8" width="140" height="92" rx="8" fill="var(--card)" stroke="#14298f" stroke-width="3"/>
+          <rect x="30" y="8" width="140" height="13" rx="8" fill="#dbe7ff"/>
+          <circle cx="40" cy="14.5" r="2" fill="#e5484d"/><circle cx="47" cy="14.5" r="2" fill="#e0a100"/><circle cx="54" cy="14.5" r="2" fill="#22a559"/>
+          <rect x="38" y="30" width="14" height="4" rx="2" fill="#bcd0fa"/>
+          <rect x="38" y="40" width="14" height="4" rx="2" fill="#bcd0fa"/>
+          <rect x="38" y="50" width="14" height="4" rx="2" fill="#bcd0fa"/>
+          <rect x="62" y="30" width="60" height="5" rx="2.5" fill="#1e46f0"/>
+          <rect x="62" y="41" width="84" height="5" rx="2.5" fill="#38b6ff" opacity=".7"/>
+          <rect x="62" y="52" width="48" height="5" rx="2.5" fill="#1e46f0" opacity=".6"/>
+          <rect x="62" y="63" width="76" height="5" rx="2.5" fill="#38b6ff" opacity=".5"/>
+          <rect x="140" y="72" width="38" height="22" rx="6" fill="#1e46f0"/>
+          <text x="159" y="87" fill="#fff" font-size="11" text-anchor="middle" font-family="monospace" font-weight="700">&gt;_</text>
+          <path d="M12 104 H188 L178 118 H22 Z" fill="#dbe7ff" stroke="#14298f" stroke-width="3" stroke-linejoin="round"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="about-grid">
+      <div class="card">
+        <h3>💻 Apa itu PPLG?</h3>
+        <p>PPLG (Pengembangan Perangkat Lunak dan Gim) adalah jurusan yang mempelajari pembuatan aplikasi, website, dan game, mulai dari logika pemrograman sampai produk jadi.</p>
+      </div>
+      <div class="card">
+        <h3>🎯 Visi Kelas</h3>
+        <p>Menjadi kelas yang kompak, kreatif, dan berprestasi dalam bidang teknologi serta saling membantu dalam belajar.</p>
+      </div>
+      <div class="card">
+        <h3>🚀 Yang Kami Pelajari</h3>
+        <p>HTML, CSS, JavaScript, Python, basis data, pemrograman dasar, desain UI/UX, dan pengembangan gim sederhana.</p>
+      </div>
+    </div>
+    <div class="about-dots" aria-hidden="true"><span style="width:90px"></span><span style="width:40px"></span><span style="width:120px"></span></div>
+
+  </section>
+
+  <section id="anggota" class="section alt reveal">
+    <h2 class="section-title">Anggota Kelas</h2>
+
+    <div class="wali" id="waliCard"></div>
+
+    <h3 class="sub-title">Siswa X PPLG 1</h3>
+    <div class="search-box">
+      <input type="text" id="searchMember" placeholder="🔍 Cari nama anggota...">
+    </div>
+    <div class="member-grid" id="memberGrid"></div>
+  <p class="note"> Semua anggota kelas X PPLG 1.</p>
+  </section>
+
+  <section id="jadwal" class="section reveal">
+    <h2 class="section-title">Jadwal Pelajaran</h2>
+    <div class="tabs" id="dayTabs"></div>
+    <div class="schedule" id="scheduleList"></div>
+
+    <div class="piket">
+      <h3>🧹 Jadwal Piket</h3>
+      <div class="piket-grid" id="piketGrid"></div>
+    </div>
+  </section>
+
+  <section id="galeri" class="section alt reveal">
+    <h2 class="section-title">Galeri Kenangan</h2>
+    <div class="filters" id="galleryFilters">
+      <button class="filter active" data-filter="all">Semua</button>
+      <button class="filter" data-filter="belajar">Belajar</button>
+      <button class="filter" data-filter="acara">Acara</button>
+      <button class="filter" data-filter="santai">Santai</button>
+    </div>
+    <div class="gallery" id="gallery"></div>
+    <p class="note">📸 Taruh foto di folder <code>images/</code> lalu sesuaikan nama file di <code>script.js</code>.</p>
+  </section>
+
+  <section id="pesan" class="section reveal">
+    <h2 class="section-title">Dinding Pesan</h2>
+    <form id="messageForm" class="message-form">
+      <input type="text" id="msgName" placeholder="Nama kamu" required maxlength="30">
+      <textarea id="msgText" placeholder="Tulis pesan atau kesan untuk kelas..." required maxlength="200"></textarea>
+      <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+    </form>
+    <div class="messages" id="messageList"></div>
+  </section>
+
+  <footer class="footer">
+    <p>© <span id="year"></span> Kelas X PPLG 1 • By Bagja</p>
+  </footer>
+
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose" aria-label="Tutup">✕</button>
+    <button class="lb-nav lb-prev" id="lbPrev" aria-label="Sebelumnya">‹</button>
+    <figure>
+      <img id="lbImg" src="" alt="">
+      <figcaption id="lbCaption"></figcaption>
+    </figure>
+    <button class="lb-nav lb-next" id="lbNext" aria-label="Berikutnya">›</button>
+  </div>
+
+  <button id="toTop" class="to-top" aria-label="Kembali ke atas">↑</button>
+
+  <script src="Kelas.js"></script>
+</body>
+</html>
